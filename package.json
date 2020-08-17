@@ -16,9 +16,7 @@
   },
   "devDependencies": {
     "ava": "^3.5.0",
-    "moleculer": "^0.14.4"
-  },
-  "dependencies": {
+    "moleculer": "^0.14.4",
     "uuid": "^8.3.0"
   }
 }
