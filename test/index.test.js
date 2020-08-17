@@ -9,7 +9,7 @@ const onStartTimeout = () => {
   this.result = `broker stopped with exit code 1`;
 };
 
-const createBrokerAndService = ({ namespace, timeoutMs = 2000 }) => {
+const createBrokerAndService = ({ namespace, timeoutMs = 1000 }) => {
   const broker = new ServiceBroker({
     namespace,
     middlewares: [startCheckerMiddleware(timeoutMs, onStartTimeout)],
