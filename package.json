@@ -1,6 +1,6 @@
 {
   "name": "@r2d2bzh/moleculer-start-checker-middleware",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Checker for moleculer ensuring that services are started",
   "main": "index.js",
   "scripts": {
