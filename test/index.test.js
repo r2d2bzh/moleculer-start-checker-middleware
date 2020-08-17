@@ -34,9 +34,7 @@ test("startcheck returns 1 when services do not start successfully before timeou
       await sleep(3000);
     },
   });
-
   await broker.start();
   t.assert(onStartTimeout.serviceStartTimeout);
-
   t.assert(this.result === `broker stopped with exit code 1`);
 });

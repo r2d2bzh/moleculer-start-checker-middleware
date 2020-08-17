@@ -1,8 +1,6 @@
 module.exports = (
   timeoutMs,
-  onStartTimeout = function () {
-    process.exit(1);
-  }
+  onStartTimeout = () => process.exit(1)
 ) => ({
   name: "startChecker",
   starting(broker) {
