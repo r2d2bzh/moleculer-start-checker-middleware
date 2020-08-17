@@ -1,5 +1,5 @@
 module.exports = (
-  timeoutMs,
+  timeoutMs = 10e3,
   onStartTimeout = () => process.exit(1)
 ) => ({
   name: "startChecker",
