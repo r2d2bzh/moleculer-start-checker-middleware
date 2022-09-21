@@ -13,6 +13,7 @@ const createBrokerAndService = ({ namespace, timeoutMs = 1000 }) => {
   const broker = new ServiceBroker({
     namespace,
     middlewares: [startCheckerMiddleware(timeoutMs, onStartTimeout)],
+    logLevel: "none",
   });
   broker.createService({ name: `${namespace}_service1` });
   return broker;

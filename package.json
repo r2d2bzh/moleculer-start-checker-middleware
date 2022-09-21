@@ -1,6 +1,6 @@
 {
   "name": "@r2d2bzh/moleculer-start-checker-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checker for moleculer ensuring that services are started",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
-    "moleculer": "^0.14.17",
-    "uuid": "^8.3.2"
+    "ava": "^4.3.3",
+    "moleculer": "^0.14.23",
+    "uuid": "^9.0.0"
   }
 }
