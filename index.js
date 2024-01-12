@@ -2,12 +2,12 @@ module.exports = (
   timeoutMs = 10e3,
   onStartTimeout = () => process.exit(1)
 ) => ({
-  name: "startChecker",
+  name: 'startChecker',
   starting(broker) {
     onStartTimeout.serviceStartTimeout = false;
     onStartTimeout.timeoutID = setTimeout(() => {
       broker.logger.error(
-        "Some services did not start in time; Stopping broker"
+        'Some services did not start in time; Stopping broker'
       );
       onStartTimeout.serviceStartTimeout = true;
       broker.stop();
