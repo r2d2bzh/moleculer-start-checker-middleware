@@ -4,11 +4,14 @@
   "description": "Checker for moleculer ensuring that services are started",
   "main": "index.js",
   "type": "module",
+  "types": "index.d.ts",
   "scripts": {
     "pretest": "npm install",
     "test": "ava",
     "pretest:debug": "npm run pretest",
-    "test:debug": "ava debug"
+    "test:debug": "ava debug",
+    "build:types": "tsc --declaration --allowJs --emitDeclarationOnly index.js",
+    "posttest": "npm run build:types"
   },
   "author": "r2d2bzh",
   "license": "ISC",
@@ -20,6 +23,7 @@
     "moleculer": "^0.14.35",
     "uuid": "^13.0.0",
     "eslint": "^9.35.0",
-    "@r2d2bzh/eslint-config": "^2.0.1"
+    "@r2d2bzh/eslint-config": "^2.0.1",
+    "typescript": "^5.9.2"
   }
 }
