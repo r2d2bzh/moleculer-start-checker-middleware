@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "Checker for moleculer ensuring that services are started",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "pretest": "npm install",
     "test": "ava",
@@ -15,8 +16,10 @@
     "access": "public"
   },
   "devDependencies": {
-    "ava": "^6.0.1",
-    "moleculer": "^0.14.32",
-    "uuid": "^9.0.1"
+    "ava": "^6.4.1",
+    "moleculer": "^0.14.35",
+    "uuid": "^13.0.0",
+    "eslint": "^9.35.0",
+    "@r2d2bzh/eslint-config": "^2.0.1"
   }
 }
