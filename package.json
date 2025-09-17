@@ -11,7 +11,8 @@
     "pretest:debug": "npm run pretest",
     "test:debug": "ava debug",
     "build:types": "tsc --declaration --allowJs --emitDeclarationOnly index.js",
-    "posttest": "npm run build:types"
+    "posttest": "npm run build:types",
+    "release": "release-it"
   },
   "author": "r2d2bzh",
   "license": "ISC",
@@ -24,6 +25,8 @@
     "uuid": "^13.0.0",
     "eslint": "^9.35.0",
     "@r2d2bzh/eslint-config": "^2.0.1",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "release-it": "^19.0.4",
+    "@release-it/conventional-changelog": "^10.0.1"
   }
 }
