@@ -1,3 +1,4 @@
+// eslint-disable-next-line unicorn/no-process-exit
 export default (timeoutMs = 10e3, onStartTimeout = () => process.exit(1)) => ({
   name: 'startChecker',
   starting(broker) {
