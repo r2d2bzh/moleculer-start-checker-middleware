@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/r2d2bzh/js-backend-rules.git"
+    "url": "git+https://github.com/r2d2bzh/moleculer-start-checker-middleware.git"
   },
   "bugs": {
-    "url": "https://github.com/r2d2bzh/js-backend-rules/issues"
+    "url": "https://github.com/r2d2bzh/moleculer-start-checker-middleware/issues"
   },
-  "homepage": "https://github.com/r2d2bzh/js-backend-rules#readme",
+  "homepage": "https://github.com/r2d2bzh/moleculer-start-checker-middleware#readme",
   "author": "r2d2bzh",
   "license": "ISC",
   "publishConfig": {
