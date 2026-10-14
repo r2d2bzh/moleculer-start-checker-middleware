@@ -1,5 +1,15 @@
 # Changelog
 
+# [1.3.0](https://github.com/r2d2bzh/moleculer-start-checker-middleware/compare/1.2.1...1.3.0) (2026-10-14)
+
+### Bug Fixes
+
+* do not stop the broker again when it is stopped before being started ([9384844](https://github.com/r2d2bzh/moleculer-start-checker-middleware/commit/9384844364dd9cc1be1c3412c751d98585444559))
+
+### Features
+
+* publish the TypeScript declarations ([daca997](https://github.com/r2d2bzh/moleculer-start-checker-middleware/commit/daca9978483a5ffc0a5678cf9ebdaafe04850b82))
+
 # [1.1.0](https://github.com/r2d2bzh/moleculer-start-checker-middleware/compare/1.0.4...1.1.0) (2025-09-17)
 
 
