@@ -32,7 +32,7 @@ test('start checker returns 0 when services start successfully', async (t) => {
   t.assert(!t.context.onStartTimeout.serviceStartTimeout);
 });
 
-test.only('start checker returns 1 when services do not start successfully before timeout', async (t) => {
+test('start checker returns 1 when services do not start successfully before timeout', async (t) => {
   t.context.broker.createService({
     name: `${t.context.namespace}_service2`,
     async started() {
@@ -42,4 +42,20 @@ test.only('start checker returns 1 when services do not start successfully befor
   await t.context.broker.start();
   t.assert(t.context.onStartTimeout.serviceStartTimeout);
   t.assert(t.context.broker.result === 'broker stopped with exit code 1');
+});
+
+test('start checker does nothing when the broker is stopped before being started', async (t) => {
+  t.context.broker.createService({
+    name: `${t.context.namespace}_service2`,
+    async started() {
+      await sleep(3000);
+    },
+  });
+  const starting = t.context.broker.start();
+  await sleep(100);
+  await t.context.broker.stop();
+  await t.notThrowsAsync(starting);
+  await sleep(1500);
+  t.assert(!t.context.onStartTimeout.serviceStartTimeout);
+  t.assert(t.context.broker.result === undefined);
 });
